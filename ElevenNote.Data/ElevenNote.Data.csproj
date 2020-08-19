@@ -66,22 +66,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202008191407274_InitialCreate.cs" />
-    <Compile Include="Migrations\202008191407274_InitialCreate.Designer.cs">
-      <DependentUpon>202008191407274_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202008191803267_InitialMigration.cs" />
+    <Compile Include="Migrations\202008191803267_InitialMigration.Designer.cs">
+      <DependentUpon>202008191803267_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202008191547068_AddAStar.cs" />
-    <Compile Include="Migrations\202008191547068_AddAStar.Designer.cs">
-      <DependentUpon>202008191547068_AddAStar.cs</DependentUpon>
+    <Compile Include="Migrations\202008191817585_AddCategory.cs" />
+    <Compile Include="Migrations\202008191817585_AddCategory.Designer.cs">
+      <DependentUpon>202008191817585_AddCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202008191605401_MakeStarNullable.cs" />
-    <Compile Include="Migrations\202008191605401_MakeStarNullable.Designer.cs">
-      <DependentUpon>202008191605401_MakeStarNullable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008191610249_updatetoStar.cs" />
-    <Compile Include="Migrations\202008191610249_updatetoStar.Designer.cs">
-      <DependentUpon>202008191610249_updatetoStar.cs</DependentUpon>
+    <Compile Include="Migrations\202008191829323_AddCategoryStuff.cs" />
+    <Compile Include="Migrations\202008191829323_AddCategoryStuff.Designer.cs">
+      <DependentUpon>202008191829323_AddCategoryStuff.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
@@ -92,17 +89,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202008191407274_InitialCreate.resx">
-      <DependentUpon>202008191407274_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202008191803267_InitialMigration.resx">
+      <DependentUpon>202008191803267_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008191547068_AddAStar.resx">
-      <DependentUpon>202008191547068_AddAStar.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202008191817585_AddCategory.resx">
+      <DependentUpon>202008191817585_AddCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008191605401_MakeStarNullable.resx">
-      <DependentUpon>202008191605401_MakeStarNullable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008191610249_updatetoStar.resx">
-      <DependentUpon>202008191610249_updatetoStar.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202008191829323_AddCategoryStuff.resx">
+      <DependentUpon>202008191829323_AddCategoryStuff.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

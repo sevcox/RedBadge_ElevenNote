@@ -7,13 +7,13 @@ namespace ElevenNote.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class MakeStarNullable : IMigrationMetadata
+    public sealed partial class AddCategory : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(MakeStarNullable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddCategory));
         
         string IMigrationMetadata.Id
         {
-            get { return "202008191605401_MakeStarNullable"; }
+            get { return "202008191817585_AddCategory"; }
         }
         
         string IMigrationMetadata.Source
