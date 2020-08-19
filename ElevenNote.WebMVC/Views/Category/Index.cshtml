@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ElevenNote.Models.NoteListItem>
+﻿@model IEnumerable<ElevenNote.Models.CategoryModels.CategoryListItem>
 
 @{
     ViewBag.Title = "Index";
@@ -22,16 +22,10 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.NoteId)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.CategoryId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IsStarred)
+            @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.CreatedUtc)
@@ -43,24 +37,18 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.NoteId)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.CategoryId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsStarred)
+                @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CreatedUtc)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.NoteId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.NoteId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.NoteId })
+                @Html.ActionLink("Edit", "Edit", new { id = item.CategoryId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.CategoryId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.CategoryId })
             </td>
         </tr>
     }
